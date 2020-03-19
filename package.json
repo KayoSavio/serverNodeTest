@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.2",
     "mongoose": "^5.9.5",
@@ -19,7 +18,13 @@
   "_moduleAliases": {
     "@": "src",
     "@app": "src/App/index.js",
-    "@config":"src/config",
-    "@controller":"src/controller"
+    "@config": "src/config",
+    "@controller": "src/controller"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "^7.19.0"
   }
 }
