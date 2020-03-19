@@ -2,7 +2,7 @@ const Test = require('@model/test');
 
 const TestController = {
   helloWorld(req, res) {
-    res.sendError('Erro no banco de dados', 500);
+    res.send('Funciona');
   },
 
   createSomeone(req, res) {
