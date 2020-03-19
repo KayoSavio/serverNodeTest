@@ -1,14 +1,8 @@
 const express = require('express');
-
+const routes = require('../routes');
 const app = express();
 
-app.use('/', (req,res) => {
-    res.send('Teste');
-  })
-  
-// Nova rota
-app.use('/novarota',(req,res) => {
-  res.send('Testando Rota');
-})
+
+app.use('/', routes);
 
 module.exports = app;

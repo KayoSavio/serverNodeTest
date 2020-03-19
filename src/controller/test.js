@@ -1,0 +1,7 @@
+const testController = {
+    helloWorld (req,res){
+      res.send('Hello World');
+    },
+};
+
+module.exports= testController;
