@@ -1,34 +1,37 @@
 {
-  "name": "marketplace",
+  "name": "marketplace-api",
   "version": "1.0.0",
   "description": "Api MarketPlace",
   "main": "index.js",
-  "author": "KayoSavio <kayosavio@hotmail.com>",
-  "license": "MIT",
   "scripts": {
-    "startserver": "nodemon src/server/index.js"
+    "start": "node server",
+    "dev": "nodemon -q server"
   },
+  "author": "",
+  "license": "",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "module-alias": "^2.2.2",
-    "mongoose": "^5.9.5",
-    "nodemon": "^2.0.2"
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-rate-limit": "^5.1.1",
+    "express-slow-down": "^1.3.1",
+    "module-alias": "^2.2.0",
+    "mongoose": "^5.4.22",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.2",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^1.18.10"
   },
   "_moduleAliases": {
     "@": "src",
-    "@app": "src/app/index.js",
+    "@app": "src/app.js",
     "@config": "src/config",
-    "@controller": "src/controller",
-    "@helpers": "src/helpers",
+    "@helper": "src/helper",
     "@model": "src/model",
-    "@server": "src/server",
-    "@service": "src/service"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-react": "^7.19.0"
+    "@middleware": "src/middleware",
+    "@service": "src/service",
+    "@controller": "src/controller"
   }
 }

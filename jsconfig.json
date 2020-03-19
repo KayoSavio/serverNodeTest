@@ -4,14 +4,13 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "@app/*": ["src/app/*"],
+      "@app/*": ["src/*"],
       "@config/*": ["src/config/*"],
-      "@controller/*": ["src/controller/*"],
-      "@helpers/*": ["src/helpers/*"],
+      "@helper/*": ["src/helper/*"],
       "@model/*": ["src/model/*"],
-      "@server/*": ["src/server/*"],
-      "@service/*": ["src/service/*"]
+      "@middleware/*": ["src/middleware/*"],
+      "@service/*": ["src/service/*"],
+      "@controller/*": ["src/controller/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
