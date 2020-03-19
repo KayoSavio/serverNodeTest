@@ -4,9 +4,14 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["src/*"],
+      "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
       "@config/*": ["src/config/*"],
-      "@controller/*": ["src/controller/*"]
+      "@controller/*": ["src/controller/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@model/*": ["src/model/*"],
+      "@server/*": ["src/server/*"],
+      "@service/*": ["src/service/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

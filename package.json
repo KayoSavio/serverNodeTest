@@ -17,9 +17,13 @@
   },
   "_moduleAliases": {
     "@": "src",
-    "@app": "src/App/index.js",
+    "@app": "src/app/index.js",
     "@config": "src/config",
-    "@controller": "src/controller"
+    "@controller": "src/controller",
+    "@helpers": "src/helpers",
+    "@model": "src/model",
+    "@server": "src/server",
+    "@service": "src/service"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
